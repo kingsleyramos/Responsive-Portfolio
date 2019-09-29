@@ -1,79 +1,110 @@
-.border-secondary{
+/* All border colors*/
+.border-secondary{ /*Bootstrap override*/
     border-color: #dddddd!important;
   }
 
-
-.navbar-brand{
+  /* Font family for title name */
+.navbar-brand{/*Bootstrap override*/
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
-.bg-info{
+/* Chagned bootstrap bg-info color globally */
+.bg-info{ /*Bootstrap override*/
     background-color: #4aaaa5!important;
 }
 
-.text-info{
+/* Changed boostrap text.info color globally */
+.text-info{ /*Bootstrap override*/
     color: #4aaaa5!important;
 }
 
-.border-info{
+/* Changed boostrap border-info color globally */
+.border-info{ /*Bootstrap override*/
     border-color: #4aaaa5!important;
 }
 
-.bg-dark{
+/* Changed bootstrap bg-dark color globally */
+.bg-dark{ /*Bootstrap override*/
     background-color: #666666!important;
 }
 
-#footerBorder{
+/* Foot border color updated to not effect other borders */
+#footerBorder{ 
     border-top: 4px solid #4aaaa5;
 }
 
+/* Changed page title font globally */
 #contentTitle{
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
+/* Changed font family for all non title text */
 p{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-.btn{
+/* Updated button globally */
+.btn{ /*Bootstrap override*/
     background-color: #4aaaa5;
     border: 0px;
     border-radius: 0 !important;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+/* Updated all label tags */
 label{
     color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+/* Updated all textarea and input tags */
 textarea, input{
     border-radius: 0 !important;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* Will remove all margins and padding when viewing screens equal or less than 575px */
+@media screen and (max-width: 575px){
+
+    #mainContentRow{
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+    }
+    
+    .container{
+        padding: 0px;
+    }
 }
 
 
 @media screen and (max-width: 640px){
     
-
+    /* Update navigation bar to fill entire width and move nav below it */
+    #navbarNav{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
     .navbar {
-
         flex-direction: column!important;
     } 
-
     a.navbar-brand{
         width: 140%;
         margin:0;
         text-align: center;
     }
 
+    /* For Portrait photo to enlarge on smaller screen */
     #portrait{
-
         width: 530px;
     }
 
+    /* Added additinoal margins to override boostrap */
     #mainContentRow{
         margin-left: 20px;
         margin-right: 20px;
     }
 
+    /* Updated project divs in Portfolio page */
     .projectBox{
         display: flex;
         justify-content: center;
@@ -82,108 +113,92 @@ textarea, input{
         position: relative;
         margin: 10px 5px 30px 5px;
         float: left;
-        }
-    
-    
-        .projectImage{
+    }
+    .projectImage{
         object-fit: cover;
         width: 100%;
-        height: 400px!important;
+        height: 350px!important;
         height: 210px;
-        }
-    
-    
-        .projectText{
+    }
+    .projectText{
         position: absolute;
         font-family: 'Georgia', Times, 'Times New Roman', serif;
         color: #ffffff;
         background-color: #4aaaa5;
         width: 100%;
         padding: 10px;
-        margin: 300px auto 0 auto;
+        margin: 250px auto 0 auto;
         font-size: 20px;
         text-align: center;
         vertical-align: middle;
-        }
+    }
     
 }
 
 
 
 
-
-
 @media screen and (min-width: 641px) and (max-width: 767px) {
 
-
+    /* Updated project divs in Portfolio page */
     .projectBox{
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    width: 240px;
-    position: relative;
-    margin: 10px 5px 20px 5px;
-    float: left;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        width: 240px;
+        position: relative;
+        margin: 10px 5px 20px 5px;
+        float: left;
     }
-
-
     .projectImage{
-    object-fit: cover;
-    width: 240px;
-    height: 210px;
+        object-fit: cover;
+        width: 240px;
+        height: 210px;
     }
-
-
     .projectText{
-    position: absolute;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    color: #ffffff;
-    background-color: #4aaaa5;
-    width: 240px;
-    padding: 10px;
-    margin: 145px auto 0 auto;
-    font-size: 20px;
-    text-align: center;
-    vertical-align: middle;
+        position: absolute;
+        font-family: 'Georgia', Times, 'Times New Roman', serif;
+        color: #ffffff;
+        background-color: #4aaaa5;
+        width: 240px;
+        padding: 10px;
+        margin: 145px auto 0 auto;
+        font-size: 20px;
+        text-align: center;
+        vertical-align: middle;
     }
-
-
 } 
 
 
 
 @media screen and (min-width: 768px) {
 
+    /* Updated project divs in Portfolio page */
     .projectBox{
         display: flex;
         justify-content: center;
         overflow: hidden;
-        width: 275px;
+        width: 260px;
         position: relative;
-        margin: 10px 20px 20px 0px;
+        margin: 10px 10px 10px 10px;
         float: left;
-        }
-
-        /* Styles for Images in Portfolio */
+    }
         .projectImage{
         object-fit: cover;
-        width: 275px;
+        width: 260px;
         height: 210px;
-        }
-
-        /* Styles for Text in Portfolio */
+    }
         .projectText{
         position: absolute;
         font-family: 'Georgia', Times, 'Times New Roman', serif;
         color: #ffffff;
         background-color: #4aaaa5;
-        width: 275px;
-        padding: 17px;
+        width: 260px;
+        padding: 10px;
         margin: 145px auto 0 auto;
-        font-size: 22px;
+        font-size: 20px;
         text-align: center;
         vertical-align: middle;
-        }
-
+    }
 }
 
