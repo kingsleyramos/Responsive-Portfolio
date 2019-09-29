@@ -6,6 +6,7 @@
     <title>Kingsley Ramos' Portfolio</title>
     <!-- Linking of stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 </head>
 
 <Body class="bg-light">
@@ -16,23 +17,24 @@
             <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md-10 px-0">
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+                        <nav class="navbar navbar-expand navbar-light bg-light p-0">
                                 <!-- Header with name place -->
                                 <a class="navbar-brand bg-info text-white px-4 py-3 m-0" href="index.html"><h1>Kingsley Ramos</h1></a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
-                                </button>
+                                </button> -->
                                 <!-- Navigation of pages -->
                                 <div class="collapse navbar-collapse" id="navbarNav">
                                     <ul class="navbar-nav ml-auto">
                                         <li class="nav-item">
-                                            <a class="nav-link mx-3" href="index.html">About</a>
-                                        </li>
-                                        <li class="nav-item border-right border-left">
-                                            <a class="nav-link mx-3" href="portfolio.html">Portfolio</a>
+                                            <a class="nav-link mx-2" href="index.html">About</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link mx-3" href="contact.html">Contact</a>
+                                            <a class="nav-link mx-2" href="portfolio.html">Portfolio</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mx-2" href="contact.html">Contact</a>
                                         </li>
                                     </ul>
                             </div>
@@ -44,91 +46,68 @@
     </Header>
 
 
-
-
-
     <!-- Main Section -->
-    <main class="flext-shrink-0"> 
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10 mt-5 py-3 border border-secondary rounded rounded-lg bg-white">
-    
+    <main class="flext-shrink-0 mb-4"> 
+        <div class="container">
+            <div class="row" id="mainContentRow">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 mt-3 py-3 bg-white border border-secondary mainContent" id="mainContentBox">
+
                     <!-- Page of Title -->
                     <div class="row">
-                        <h4 class="col-sm-12 text-info border-bottom border-secondary pb-3">Contact</h4>
+                        <h2 class="col-sm-12 text-info pb-3 border-bottom border-secondary" id="contentTitle">About Me</h2>
                     </div>
                     
                     <!-- ************** MAIN CONTENT BELOW ************ -->
-    
-                
-    
-                    <!-- ************** MAIN CONTENT ABOVE ************ -->
-    
+
+                    <!-- Projects -->
+                    <div class="projectBox">
+                        <img src="assets/images/hangman.png" alt="hangman" class="projectImage">
+                        <p class="projectText">Hangman</p>
                     </div>
-                    <div class="col-md-1"></div>
+
+                    <!-- RPG Game Project-->
+                    <div class="projectBox">
+                        <img src="assets/images/rpggame.jpg" alt="RPGGame" class="projectImage">
+                        <p class="projectText">RPG Game</p>
+                    </div>
+
+                    <!-- Trivia Game Project -->
+                    <div class="projectBox">
+                        <img src="assets/images/triviagame.jpg" alt="triviaGame" class="projectImage">
+                        <p class="projectText">Trivia Game</p>
+                    </div>
+
+                    <!-- Rutgers Info Widget Project -->
+                    <div class="projectBox">
+                        <img src="assets/images/rutgersinfowidget.jpg" alt="rutgersInfoWidget" class="projectImage">
+                        <p class="projectText">Rutgers Info Widget</p>
+                    </div>
+
+                    <!-- Rock Paper Scissors Project -->
+                    <div class="projectBox">
+                        <img src="assets/images/rockpaperscissors.jpg" alt="rockPaperScissors" class="projectImage">
+                        <p class="projectText">Rock Paper Scissors</p>
+                    </div>
+
                 </div>
+
+                <!-- ************** MAIN CONTENT ABOVE ************ -->
+                <div class="col-md-1"></div>
             </div>
-        </main>
-
-
-
-
-    <!-- Main Section -->
-    <section> 
-        <div class="mainContent">
-            <!-- Page Title -->
-            <div>
-                <h2>Portfolio</h2>
-            </div>
-
-            <!-- Projects -->
-            <div class="projectBox">
-                <img src="assets/images/hangman.png" alt="hangman" class="projectImage">
-                <p class="projectText">Hangman</p>
-            </div>
-
-            <!-- RPG Game Project-->
-            <div class="projectBox">
-                <img src="assets/images/rpggame.jpg" alt="RPGGame" class="projectImage">
-                <p class="projectText">RPG Game</p>
-            </div>
-
-            <!-- Trivia Game Project -->
-            <div class="projectBox">
-                <img src="assets/images/triviagame.jpg" alt="triviaGame" class="projectImage">
-                <p class="projectText">Trivia Game</p>
-            </div>
-
-            <!-- Rutgers Info Widget Project -->
-            <div class="projectBox">
-                <img src="assets/images/rutgersinfowidget.jpg" alt="rutgersInfoWidget" class="projectImage">
-                <p class="projectText">Rutgers Info Widget</p>
-            </div>
-
-            <!-- Rock Paper Scissors Project -->
-            <div class="projectBox">
-                <img src="assets/images/rockpaperscissors.jpg" alt="rockPaperScissors" class="projectImage">
-                <p class="projectText">Rock Paper Scissors</p>
-            </div>
+            
         </div>
-    </section>
-
+    
+    </main>
 
 
     <!-- Footer -->
-    <footer class="fixed-bottom bg-dark border-top border-info">
+    <footer class="fixed-bottom bg-dark" id="footerBorder">
         <div class="container">
-            <p class="text-white-50 text-center mb-0 pt-4">Copyright &copy;</p>
+            <p class="text-white-50 text-center my-4">Copyright &copy;</p>
         </div>
     </footer>
-        
-    <!-- Javascript for Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
-    
 </Body>
 
 </html>
+

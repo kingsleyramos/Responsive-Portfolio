@@ -1,0 +1,189 @@
+.border-secondary{
+    border-color: #dddddd!important;
+  }
+
+
+.navbar-brand{
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+.bg-info{
+    background-color: #4aaaa5!important;
+}
+
+.text-info{
+    color: #4aaaa5!important;
+}
+
+.border-info{
+    border-color: #4aaaa5!important;
+}
+
+.bg-dark{
+    background-color: #666666!important;
+}
+
+#footerBorder{
+    border-top: 4px solid #4aaaa5;
+}
+
+#contentTitle{
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+p{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.btn{
+    background-color: #4aaaa5;
+    border: 0px;
+    border-radius: 0 !important;
+}
+
+label{
+    color: #777777;
+}
+
+textarea, input{
+    border-radius: 0 !important;
+}
+
+
+@media screen and (max-width: 640px){
+    
+
+    .navbar {
+
+        flex-direction: column!important;
+    } 
+
+    a.navbar-brand{
+        width: 140%;
+        margin:0;
+        text-align: center;
+    }
+
+    #portrait{
+
+        width: 530px;
+    }
+
+    #mainContentRow{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .projectBox{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        margin: 10px 5px 30px 5px;
+        float: left;
+        }
+    
+    
+        .projectImage{
+        object-fit: cover;
+        width: 100%;
+        height: 400px!important;
+        height: 210px;
+        }
+    
+    
+        .projectText{
+        position: absolute;
+        font-family: 'Georgia', Times, 'Times New Roman', serif;
+        color: #ffffff;
+        background-color: #4aaaa5;
+        width: 100%;
+        padding: 10px;
+        margin: 300px auto 0 auto;
+        font-size: 20px;
+        text-align: center;
+        vertical-align: middle;
+        }
+    
+}
+
+
+
+
+
+
+@media screen and (min-width: 641px) and (max-width: 767px) {
+
+
+    .projectBox{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 240px;
+    position: relative;
+    margin: 10px 5px 20px 5px;
+    float: left;
+    }
+
+
+    .projectImage{
+    object-fit: cover;
+    width: 240px;
+    height: 210px;
+    }
+
+
+    .projectText{
+    position: absolute;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    width: 240px;
+    padding: 10px;
+    margin: 145px auto 0 auto;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    }
+
+
+} 
+
+
+
+@media screen and (min-width: 768px) {
+
+    .projectBox{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        width: 275px;
+        position: relative;
+        margin: 10px 20px 20px 0px;
+        float: left;
+        }
+
+        /* Styles for Images in Portfolio */
+        .projectImage{
+        object-fit: cover;
+        width: 275px;
+        height: 210px;
+        }
+
+        /* Styles for Text in Portfolio */
+        .projectText{
+        position: absolute;
+        font-family: 'Georgia', Times, 'Times New Roman', serif;
+        color: #ffffff;
+        background-color: #4aaaa5;
+        width: 275px;
+        padding: 17px;
+        margin: 145px auto 0 auto;
+        font-size: 22px;
+        text-align: center;
+        vertical-align: middle;
+        }
+
+}
+
