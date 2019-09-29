@@ -1,3 +1,4 @@
+/* Repeating background */
 body {
     background-image: url("../images/dust_scratches.png");
     background-repeat: repeat;
@@ -188,12 +189,12 @@ textarea, input{
         margin: 10px 10px 10px 10px;
         float: left;
     }
-        .projectImage{
+    .projectImage{
         object-fit: cover;
         width: 260px;
         height: 210px;
     }
-        .projectText{
+    .projectText{
         position: absolute;
         font-family: 'Georgia', Times, 'Times New Roman', serif;
         color: #ffffff;
@@ -205,5 +206,9 @@ textarea, input{
         text-align: center;
         vertical-align: middle;
     }
+    .col-md-10{
+        width: 500px!important;
+    }
+
 }
 
